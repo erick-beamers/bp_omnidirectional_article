@@ -1,7 +1,7 @@
 
 %-
 %*----------- SLIDE -------------------------------------------------------------
-\begin{frame}[t]{Introdução: O problema} 
+\begin{frame}[t]{Introdução: o problema} 
 	\transdissolve[duration=0.5]
 	Baixa precisão no comportamento do robô.
 
@@ -45,63 +45,58 @@
 	%*----------- notes
 	\note[item]{Notes can help you to remember important information. Turn on the notes option.}
 \end{frame}
+
 %-
 %*----------- SLIDE -------------------------------------------------------------
-\begin{frame}[c]{Introdução: Qual o problema?}
-
-
-	\begin{center}
-		\includemedia[
-		%width=0.7\linewidth,
-		totalheight=0.39375\linewidth,
-		activate=pageopen,
-		passcontext, 
-		%transparent,
-		addresource=./Source/gifs/atlas-fail.wmv,
-		flashvars={
-			source=./Source/gifs/atlas-fail.wmv
-			&autoPlay=true
-			&autoRewind=true
-			&loop=true}
-		]{\fbox{\includegraphics{Source/gifs/atlas-fail.png}}}{VPlayer.swf}
-	\end{center}
-	
-	%*----------- notes
-	\note[item]{Notes can help you to remember important information. Turn on the notes option.}
-\end{frame}
-%-
-%*----------- SLIDE -------------------------------------------------------------
-\begin{frame}[t]{Introdução: Qual o problema?} 
+\begin{frame}[t]{Introdução: as causas apresentadas} 
 	\transdissolve[duration=0.5]
-	Baixa precisão no comportamento do robô.
-	
-	%\newline 
-	\begin{columns}[t]
-		\column{.05\linewidth}
-		\column{.4\linewidth}
-		\begin{enumerate}
-			\item modelo dinâmico insuficiente;
-			\item parâmetros imprecisos (específico);
-			\item desenvolvimento da liderança em projetos \cite{Mohan2015}.
-		\end{enumerate}
-		\column{.6\linewidth}
-		\begin{center}
-			%\centerline{
-				\begin{figure}
-					%\includegraphics[width=1\textwidth]{pista}
-					\caption{Pista de corrida \cite{agostini2007}}
-					\roundpic[xshift=0cm,yshift=0cm]{2.5cm}{6cm}{pista}
-					%\caption{Pista de corrida \cite{agostini2007}}
-				\end{figure}
-				%}
-		\end{center}
+	\begin{enumerate}
+		\item modelo dinâmico incompleto;
+		\item parâmetros imprecisos (específico);
+	\end{enumerate}
+	\begin{columns}
+		\column{.5\textwidth}
+		\begin{figure}
+			\caption{Realidade:}
+			\includemedia[
+			totalheight=0.5\linewidth,
+			activate=pageopen,
+			passcontext, 
+			%transparent,
+			addresource=./Source/gifs/atlas-fail.wmv,
+			flashvars={
+				source=./Source/gifs/atlas-fail.wmv
+				&autoPlay=true
+				&autoRewind=true
+				&loop=true}
+			]{\fbox{\includegraphics{Source/gifs/atlas-fail.png}}}{VPlayer.swf}
+		\end{figure}
+		\column{.5\textwidth}
+		\begin{figure}
+			\caption{Realidade:}
+			\includemedia[
+			totalheight=0.5\linewidth,
+			activate=pageopen,
+			passcontext, 
+			%transparent,
+			addresource=./Source/gifs/atlas-fail.wmv,
+			flashvars={
+				source=./Source/gifs/atlas-fail.wmv
+				&autoPlay=true
+				&autoRewind=true
+				&loop=true}
+			]{\fbox{\includegraphics{Source/gifs/atlas-fail.png}}}{VPlayer.swf}
+		\end{figure}
+%		\Huge{\textbf{\textcolor{mracula5}{Quando chovia...}}}
 	\end{columns}
-	%*----------- notes
+
+
+		%*----------- notes
 	\note[item]{Notes can help you to remember important information. Turn on the notes option.}
 \end{frame}
 %-
 %*----------- SLIDE -------------------------------------------------------------
-\begin{frame}[c]{Objetivo} 
+\begin{frame}[c]{A abordagem} 
 	\framesubtitle{sub-objetivo}
 	\transdissolve[duration=0.5]
 	
