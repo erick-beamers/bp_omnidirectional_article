@@ -1,10 +1,10 @@
 \documentclass[aspectratio=169,xcolor=table]{beamer}
 %aspcetratio >> 1610 169 149 54 43 32
 %The themes:
-%\usetheme[style=classic]{mharvellous}
-%\usetheme[style=dark]{mharvellous}
-%\usetheme[style=mracula]{mharvellous}
-\usetheme[style=default]{mharvellous}
+\usetheme[style=classic]{mharvellous}
+% \usetheme[style=dark]{mharvellous}
+% \usetheme[style=mracula]{mharvellous}
+% \usetheme[style=default]{mharvellous}
 %*--------------------------------------------------
 %\usepackage{helvet}
 %*--------------------------------------------------
@@ -38,6 +38,9 @@
 %\usepackage{palatino}
 %\usepackage{pgfpages}
 \usepackage{float}
+%*--------------------------------------------------
+\usepackage{subcaption} % sub imagem nas figuras
+\usepackage{lmodern}
 %*--------------------------------------------------
 \usepackage[timeinterval=1]{tdclock}
 %\usepackage[font=Times,timeinterval=1, timeduration=200,resetatpages=all]{tdclock}
@@ -106,25 +109,25 @@
   %*----------- COVER -------------------------------------------------------------
   \begin{frame}[t,plain]
     %*----------- sound--------------------------------
-    \includemedia[
-    %width=1ex,
-    %height=1ex,
-    %activate=pageopen, 
-    activate=onclick,
-    deactivate=onclick,
-    %passcontext,
-    transparent,
-    addresource=./Source/sounds/hip-hop.mp3,
-    flashvars={
-      source=./Source/sounds/hip-hop.mp3
-      %&autoPlay=true
-      &autoRewind=true
-      &Play=2s
-      &repeat=always
-      %&Loop=true
-    }
-    ]
-    {}{VPlayer.swf}
+    % \includemedia[
+    %   %width=1ex,
+    %   %height=1ex,
+    %   %activate=pageopen, 
+    %   activate=onclick,
+    %   deactivate=onclick,
+    %   %passcontext,
+    %   transparent,
+    %   addresource=./Source/sounds/hip-hop.mp3,
+    %   flashvars={
+    %     source=./Source/sounds/hip-hop.mp3
+    %     %&autoPlay=true
+    %     &autoRewind=true
+    %     &Play=2s
+    %     &repeat=always
+    %     %&Loop=true
+    %   }
+    % ]
+    % {}{VPlayer.swf}
     %*----------- start-page--------------------------
     \titlepage
     %*----------- notes-------------------------------
@@ -133,10 +136,10 @@
   %-
   %*----------- SECTIONS ----------------------------------------------------------
   \input{Sections/01-introduction}
-%	\input{Sections/02-review}
-%	\input{Sections/03-method}
-%	\input{Sections/04-results}
-%	\input{Sections/05-references}
+  % \input{Sections/02-review}
+  % \input{Sections/03-method}
+  % \input{Sections/04-results}
+  \input{Sections/05-references}
   %-
   %*----------- SLIDE-BACKUP ------------------------------------------------------
   % \backupbegin

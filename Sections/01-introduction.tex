@@ -1,34 +1,58 @@
 
+
+%*----------- SLIDE -------------------------------------------------------------
+\begin{frame}[c]{Objetivo}
+  \transdissolve[duration=0.5]
+
+  \begin{center}
+    \Wider{
+      \begin{shaded}
+        \begin{center}
+          \vspace*{0.5cm}
+          \resizebox{!}{0.6cm}{%
+            \color{black} Entendimento do artigo
+          }
+        \end{center}
+      \end{shaded}
+    }
+  \end{center}
+
+
+  %*----------- notes
+  \note[item]{Notes can help you to remember important information. Turn on the notes option.}
+\end{frame}
+
 %-
 %*----------- SLIDE -------------------------------------------------------------
-\begin{frame}[t]{Introdução: o problema}
+
+\begin{frame}[t]{Introdução}
+  \framesubtitle{o problema}
   \transdissolve[duration=0.5]
   Baixa precisão no comportamento do robô.
 
   \begin{columns}[t]
     \column{.6\linewidth}
       \begin{figure}
-        \caption{Expectativa:}
         \includemedia[
-        totalheight=0.5\linewidth,
-        activate=pageopen,
-        passcontext,
-        %transparent,
-        addresource=./Source/gifs/atlas-jump.wmv,
-        flashvars={
-          source=./Source/gifs/atlas-jump.wmv
-          &autoPlay=true
-          &autoRewind=true
-          &loop=true}
-        ]{\fbox{\includegraphics{Source/gifs/atlas-jump.png}}}{VPlayer.swf}
+          totalheight=0.5\linewidth,
+          activate=pageopen,
+          passcontext,
+          %transparent,
+          addresource=./Source/gifs/atlas-jump.wmv,
+          flashvars={
+            source=./Source/gifs/atlas-jump.wmv
+            &autoPlay=true
+            &autoRewind=true
+            &loop=true}
+            ]{\fbox{\includegraphics{Source/gifs/atlas-jump.png}}}{VPlayer.swf}
+          \caption{Expectativa:}
       \end{figure}
     \column{.6\linewidth}
     \begin{center}
       %\centerline{
       \begin{figure}
-        \caption{Realidade:}
         \includemedia[
-        totalheight=0.5\linewidth,
+          totalheight=0.5\linewidth,
         activate=pageopen,
         passcontext,
         %transparent,
@@ -38,7 +62,8 @@
           &autoPlay=true
           &autoRewind=true
           &loop=true}
-        ]{\fbox{\includegraphics{Source/gifs/atlas-fail.png}}}{VPlayer.swf}
+          ]{\fbox{\includegraphics{Source/gifs/atlas-fail.png}}}{VPlayer.swf}
+        \caption{Realidade:}
       \end{figure}
     \end{center}
   \end{columns}
@@ -46,52 +71,51 @@
   \note[item]{Notes can help you to remember important information. Turn on the notes option.}
 \end{frame}
 
+%*----------- SLIDE -------------------------------------------------------------
+\begin{frame}[t]{Introdução}
+  \framesubtitle{O robô utilizado}
+  \transdissolve[duration=0.5]
+
+  \begin{figure}[ht!]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+      \includegraphics[width=\textwidth]{Three_wheeled_robot.png}
+      \caption{Três rodas.}
+      \label{fig:3_wheels_robot}
+    \end{subfigure}
+    ~
+    \begin{subfigure}[b]{0.3\textwidth}
+      \includegraphics[width=\textwidth]{four_wheeled_robot.png}
+      \caption{Quatro rodas.}
+      \label{fig:4_wheels_robot}
+    \end{subfigure}
+    
+  \caption{ Plataforma utilizada para comparar as duas configurações. \cite{Oliveira2008}}
+  \end{figure}
+  
+  %*----------- notes
+  \note[item]{Notes can help you to remember important information. Turn on the notes option.}
+\end{frame}
+
 %-
 %*----------- SLIDE -------------------------------------------------------------
-\begin{frame}[t]{Introdução: as causas apresentadas}
+\begin{frame}[t]{Introdução}
+  \framesubtitle{As causas do problema}
   \transdissolve[duration=0.5]
   \begin{enumerate}
-    \item modelo dinâmico incompleto;
-    \item parâmetros imprecisos (específico);
+    \item Modelo dinâmico incompleto.
+    \begin{enumerate}
+      \item Dificuldade em modelar os atritos internos.
+    \end{enumerate}
+
+    \item Parâmetros imprecisos (específico para o robô).
+    \begin{enumerate}
+      \item Coeficientes de atrito.
+      \item Momento inercial.
+    \end{enumerate}
   \end{enumerate}
-  \begin{columns}
-    \column{.5\textwidth}
-    \begin{figure}
-      \caption{Realidade:}
-      \includemedia[
-      totalheight=0.5\linewidth,
-      activate=pageopen,
-      passcontext,
-      %transparent,
-      addresource=./Source/gifs/atlas-fail.wmv,
-      flashvars={
-        source=./Source/gifs/atlas-fail.wmv
-        &autoPlay=true
-        &autoRewind=true
-        &loop=true}
-      ]{\fbox{\includegraphics{Source/gifs/atlas-fail.png}}}{VPlayer.swf}
-    \end{figure}
-    \column{.5\textwidth}
-    \begin{figure}
-      \caption{Realidade:}
-      \includemedia[
-      totalheight=0.5\linewidth,
-      activate=pageopen,
-      passcontext,
-      %transparent,
-      addresource=./Source/gifs/atlas-fail.wmv,
-      flashvars={
-        source=./Source/gifs/atlas-fail.wmv
-        &autoPlay=true
-        &autoRewind=true
-        &loop=true}
-      ]{\fbox{\includegraphics{Source/gifs/atlas-fail.png}}}{VPlayer.swf}
-    \end{figure}
-%		\Huge{\textbf{\textcolor{mracula5}{Quando chovia...}}}
-  \end{columns}
 
-
-    %*----------- notes
+  %*----------- notes
   \note[item]{Notes can help you to remember important information. Turn on the notes option.}
 \end{frame}
 %-
@@ -100,18 +124,18 @@
   \framesubtitle{sub-objetivo}
   \transdissolve[duration=0.5]
 
-  \begin{center}
-    \Wider{%
-      \begin{shaded}
-        \begin{center}
-          \vspace*{0.5cm}
-          \resizebox{!}{0.7cm}{%
-            \color{bg} O objetivo é ter um objetivo.
-          }%
-        \end{center}
-      \end{shaded}
-    }%
-  \end{center}
+  % \begin{center}
+  %   \Wider{%
+  %     \begin{shaded}
+  %       \begin{center}
+  %         \vspace*{0.5cm}
+  %         \resizebox{!}{0.7cm}{%
+  %           \color{bg} O objetivo é ter um objetivo. Extern ou interno.  certx ou errrado
+  %         }%
+  %       \end{center}
+  %     \end{shaded}
+  %   }%
+  % \end{center}
 
 
   %*----------- notes
